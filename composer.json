@@ -1,0 +1,23 @@
+{
+    "name": "robypz/laravel-mongodb-permission",
+    "description": "Simple roles and permissions package for Laravel using MongoDB",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^12.0",
+        "mongodb/laravel-mongodb": "^5.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RobYpz\\LaravelMongodbPermission\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robert Yepez",
+            "email": "robertyepez0208@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
