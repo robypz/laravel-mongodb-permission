@@ -17,6 +17,6 @@ class LaravelMongoDBPermissionServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../../database/migrations' => database_path('migrations'),
-        ], 'create_laravel_mongodb_permission_collections');
+        ], 'laravel-assets');
     }
 }
