@@ -1,4 +1,5 @@
 <?php
+
 namespace RobYpz\LaravelMongodbPermission\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -13,5 +14,9 @@ class LaravelMongoDBPermissionServiceProvider extends ServiceProvider
         $router = $this->app->make(Router::class);
         $router->aliasMiddleware('role', Role::class);
         $router->aliasMiddleware('permission', Permission::class);
+
+        $this->publishes([
+            __DIR__ . '/../../database/migrations' => database_path('migrations'),
+        ], 'create_laravel_mongodb_permission_collections');
     }
 }
