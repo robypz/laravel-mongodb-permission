@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
 use MongoDB\Laravel\Schema\Blueprint;
 
-class CreateLaravelMongodbPermissionCollections extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -39,4 +39,4 @@ class CreateLaravelMongodbPermissionCollections extends Migration
         Schema::dropIfExists('roles');
         Schema::dropIfExists('permissions');
     }
-}
+};
