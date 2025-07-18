@@ -1,6 +1,6 @@
 <?php
 
-namespace RobYpz\LaravelMongodbPermission\Migrations;
+namespace RobYpz\LaravelMongodbPermission\Database\Migrations;
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
