@@ -1,8 +1,10 @@
 <?php
 
-namespace RobYpz\LaravelMongodbPermission\Models;
+namespace RobYpz\LaravelMongodbPermission\Traits;
 
 use MongoDB\Laravel\Relations\BelongsToMany;
+use RobYpz\LaravelMongodbPermission\Models\Permission;
+use RobYpz\LaravelMongodbPermission\Models\Role;
 
 trait HasRoles  {
 
